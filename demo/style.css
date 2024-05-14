@@ -1,0 +1,449 @@
+@import 'utilities.css';
+
+:root {
+    --primary: rgb(29, 221, 189);
+    --bgDark: rgb(12, 12, 12);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(98, 217, 199);
+    --bgLight: rgb(190, 181, 181);
+    --t: rgb(12, 12, 12);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+body
+{
+    height: 100vh;
+    background: linear-gradient(to right, black 0%, black 100% ); 
+}
+header {
+    background-color: var(--bgDark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+header nav .left a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .logo {
+    margin-right: 3rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.hero .left img {
+    top: 5px;
+    width: 90%;
+}
+
+.hero .right {
+    color: var(--white);
+    margin-top: -7rem;
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span {
+    color: var(--primary);
+}
+
+.hero .right p {
+    line-height: 1.9;
+    margin-bottom: 6rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-centre {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--t);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--primary);
+}
+
+section {
+    padding: 6rem;
+}
+
+
+section.about h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+
+section.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+section.about p {
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+section.about .socials {
+    display: flex;
+}
+
+section.about .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    margin-right: 0.8rem;
+    border-radius: 50%;
+}
+
+section.about .socials a:hover {
+    background: var(--primary);
+}
+section.education{
+    background: rgb(31, 30, 30);
+    color: rgb(228, 214, 214);
+}
+
+
+section.services {
+    background: rgb(29, 28, 28)
+}
+
+.services-head {
+    color: rgb(29, 28, 28);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+    color: var(--primary);
+}
+
+.services-head+p {
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    font-weight: 400;
+}
+
+.card img {
+    width: 50px;
+    background: white;
+}
+
+section.services .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+section.services .card-grid .card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+section.services .card-grid .card img {
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var();
+}
+
+section.services .card-grid .card h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-grid .card p {
+    font-family: 'Lato', sans-serif;
+    color: var(--seconday);
+    line-height: 1.6;
+}
+
+section.services .card-grid .card:hover {
+    background: var(--primary);
+}
+
+section.services .card-grid .card:hover h2 {
+    color: var(--white);
+}
+
+section.services .card-grid .card:hover p {
+    color: var(--white);
+}
+
+section.skills{
+    background: rgb(36, 35, 35);
+    color: rgb(235, 230, 230);
+}
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  section.contact{
+    background: rgb(29, 29, 29);
+    color: rgb(235, 230, 230);
+  }
+  section.contact .container img{
+    width: 100%;
+    float: left;
+    
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+section.experience{
+    background: rgb(38, 38, 39);
+    color: rgb(235, 230, 230);
+}
+
+
+/* footer section starts */
+.footer{
+    min-height: auto;
+    padding-top: 0;
+    background: rgb(55, 55, 65);
+  }
+  .footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer .box-container .box{
+    flex: 1 1 25rem;
+    margin: 2rem;
+  }
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 1rem;
+    font-weight: normal;
+  }
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ccc;
+    padding: .7rem 0;
+    text-transform: none;
+  }
+  .footer .box-container .box p i{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: #ffae00;
+  }
+  .footer .box-container .box a{
+    font-size: 1.5rem;
+    color: rgb(238, 238, 238);
+    padding: .3rem 0;
+    text-decoration: none;
+    display: block;
+  }
+  .footer .box-container .box a:hover{
+    color: #ffae00;
+    text-decoration: none;
+  }
+  .footer .box-container .box .share{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+  .footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    transition: .2s;
+    background: rgb(230, 230, 230);
+    color: #02094b;
+    border: none;
+  }
+  .footer .box-container .box .share a:hover{
+    background: transparent;
+    transform: scale(0.98);
+    border: .1rem solid rgb(180, 178, 178);
+    color: #ffae00;
+  }
+  .footer .credit{
+    padding: 1rem 0 0 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 600;
+    color: #fff;
+    border-top: .1rem solid #fff3;
+  }
+  .footer .credit a{
+    color: #ffae00;
+    text-decoration: none;
+  }
+  .footer .fa{
+      color: #E90606;
+      margin: 0 .3rem;
+      font-size: 1.5rem;
+      animation: pound .35s infinite alternate;
+  }
+  .footer .box .row .column{
+    float: left;
+    width: 15%;
+    padding: 5px;
+  }
+  @-webkit-keyframes pound{
+    to{
+      transform: scale(1.1);
+    }
+  }
+  @keyframes pound{
+    to{
+      transform: scale(1.1);
+  }
+  }
+  @media(max-width:450px){
+    .footer .box-container .box{
+      margin: 2rem;
+    }
+    .footer .box-container .box p{
+      padding: 0.7rem;
+    }
+    .footer .box-container .box .share a{
+      padding: 1.1rem;
+    }
+  }
+  /* footer section ends */
